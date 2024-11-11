@@ -1,0 +1,141 @@
+@import "./base.css";
+
+
+header {
+  background-image: url(/assets/img/public/hero_section.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+header h2 {
+  font-family: var(--subFont);
+  font-weight: bold;
+  color: #E9BD8C;
+}
+
+header h1 {
+  font-family: var(--mainFont);
+  font-weight: bold;
+  color: #F5F5F5;
+}
+
+.top_products h2 {
+  font-family: var(--mainFont);
+  font-weight: bold;
+
+}
+
+.top_products h3 {
+  font-family: var(--subFont);
+  font-weight: bold;
+
+
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-text i {
+  font-size: small;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.card a {
+  color: white;
+  background-color: var(--subColor);
+}
+
+.card-text i:hover {
+  background-color: var(--subColor);
+  color: white;
+}
+
+.card:hover {
+  box-shadow: 0 5px 10px var(--subColor);
+}
+
+.first_order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/img/First_order/first_order.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+
+}
+
+
+
+.countdown {
+  text-align: center;
+  padding: 100px;
+  width: 600px;
+  margin: auto;
+}
+
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: var(--subColor);
+  font-family: var(--mainFont);
+}
+
+
+.timer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+}
+
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  margin: 0 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.time-value {
+  color: var(--subColor);
+}
+
+
+.unit {
+  font-size: 0.5em;
+  color: #666;
+  margin-top: 5px;
+}
+
+
+.first_order a {
+  color: white;
+  background-color: var(--subColor);
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sansita+Swashed:wght@300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --mainColor:#E9BD8C;
+    --subColor:#933C24;
+    --mainFont:"Sansita Swashed", system-ui;
+    --subFont: "Inter", sans-serif;;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+}
+
+.container {
+    width: calc(100% - 131.8px);
+    margin: auto;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
