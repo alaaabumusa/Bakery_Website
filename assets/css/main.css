@@ -1,4 +1,15 @@
 @import "./base.css";
+h2 {
+  font-family: var(--mainFont);
+  font-weight: bold;
+
+}
+
+
+.navbar-toggler {
+  background-color: var(--mainColor);
+  border: none;
+}
 
 
 header {
@@ -23,12 +34,6 @@ header h1 {
   font-family: var(--mainFont);
   font-weight: bold;
   color: #F5F5F5;
-}
-
-.top_products h2 {
-  font-family: var(--mainFont);
-  font-weight: bold;
-
 }
 
 .top_products h3 {
@@ -62,7 +67,7 @@ header h1 {
   color: white;
 }
 
-.card:hover {
+.top_products .card:hover {
   box-shadow: 0 5px 10px var(--subColor);
 }
 
@@ -75,11 +80,22 @@ header h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 100px;
+  height: 100%;
 
 }
 
+.first_order a {
+  color: white;
+  background-color: var(--subColor);
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
 
+}
 
 .countdown {
   text-align: center;
@@ -127,15 +143,50 @@ h1 {
 }
 
 
-.first_order a {
-  color: white;
+
+.about_us {
+  background: url(../img/About_us/about_us.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 50px 0; 
+  text-align: center; 
+}
+
+.about_us h2 {
+  font-weight: 700; 
+  color: #F5F5F5; 
+}
+
+.about_us p {
+  width: 50%;
+  color: #B9B9B9; 
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.about_us a {
   background-color: var(--subColor);
   padding: 15px 20px;
   border-radius: 5px;
-  text-decoration: none;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 30px;
+}
 
+a:hover {
+  background-color: var(--mainColor); /* تغيير الخلفية عند التمرير */
+  transform: scale(1.05); /* تأثير تكبير عند التمرير */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* تأثير سلس عند الانتقال */
+}
+
+.Featured_treats{
+  padding:30px ;
+}
+
+.Featured_treats h5{
+  font-family: var(--subFont);
+  font-weight: bold;
 }
