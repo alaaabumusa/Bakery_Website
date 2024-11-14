@@ -2,15 +2,29 @@
 h2 {
   font-family: var(--mainFont);
   font-weight: bold;
-
 }
 
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  color: white;
+}
+.navbar-nav .nav-link {
+  color: white;
+  padding: 10px 20px;
+  font-size: large;
+}
+.navbar-nav .nav-link:hover {
+  color: #e9bd8c;
+  background-color: transparent;
+}
 
 .navbar-toggler {
   background-color: var(--mainColor);
   border: none;
 }
-
 
 header {
   background-image: url(../img/public/hero_section.png);
@@ -27,20 +41,27 @@ header {
 header h2 {
   font-family: var(--subFont);
   font-weight: bold;
-  color: #E9BD8C;
+  color: #e9bd8c;
 }
 
 header h1 {
   font-family: var(--mainFont);
   font-weight: bold;
-  color: #F5F5F5;
+  color: #f5f5f5;
+}
+.shopNow {
+  background-color: var(--subColor); /* اللون الأصلي */
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.shopNow:hover {
+  background-color: var(--mainColor); /* تغيير اللون عند المرور */
 }
 
 .top_products h3 {
   font-family: var(--subFont);
   font-weight: bold;
-
-
 }
 
 .card-text {
@@ -63,7 +84,12 @@ header h1 {
 }
 
 .card-text i:hover {
-  background-color: var(--subColor);
+  background-color: var(--mainColor);
+  color: white;
+}
+
+.btn-light:hover {
+  background-color: var(--mainColor);
   color: white;
 }
 
@@ -81,7 +107,6 @@ header h1 {
   background-size: cover;
   background-position: center;
   height: 100%;
-
 }
 
 .first_order a {
@@ -94,9 +119,11 @@ header h1 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 30px;
-
 }
 
+.first_order a:hover {
+  background-color: var(--mainColor);
+}
 .countdown {
   text-align: center;
   padding: 100px;
@@ -104,22 +131,17 @@ header h1 {
   margin: auto;
 }
 
-
 h1 {
   font-size: 2.5em;
   margin-bottom: 30px;
   color: var(--subColor);
   font-family: var(--mainFont);
 }
-
-
 .timer {
   display: flex;
   justify-content: space-around;
   font-size: 2em;
 }
-
-
 .time-unit {
   display: flex;
   flex-direction: column;
@@ -129,12 +151,9 @@ h1 {
   margin: 0 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
-
-
 .time-value {
   color: var(--subColor);
 }
-
 
 .unit {
   font-size: 0.5em;
@@ -142,26 +161,60 @@ h1 {
   margin-top: 5px;
 }
 
+@media screen and (max-width: 576px) {
+  .first_order {
+    padding: 15px;
+  }
+  .timer {
+    flex-direction: column;
+    gap: 5px;
+  }
 
+  .time-value {
+    font-size: 1.2rem;
+  }
+}
+.menu,
+.menu .nav {
+  padding: 20px;
+}
+.menu h2 {
+  padding: 10px;
+  text-align: center;
+}
+
+.menu .nav-link {
+  color: #666;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #f5f5f5;
+  background-color: var(--subColor);
+}
+
+.card-img-top:hover {
+  transform: scale(1.05); /* تأثير تكبير عند التمرير */
+  transition: transform 0.3s ease; /* تأثير سلس عند الانتقال */
+}
 
 .about_us {
-  background: url(../img/About_us/about_us.jpg); 
+  background: url(../img/About_us/about_us.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
-  padding: 50px 0; 
-  text-align: center; 
+  padding: 50px 0;
+  text-align: center;
 }
 
 .about_us h2 {
-  font-weight: 700; 
-  color: #F5F5F5; 
+  font-weight: 700;
+  color: #f5f5f5;
 }
 
 .about_us p {
   width: 50%;
-  color: #B9B9B9; 
+  color: #b9b9b9;
   margin: auto;
   margin-bottom: 50px;
 }
@@ -176,17 +229,54 @@ h1 {
   margin-bottom: 30px;
 }
 
-a:hover {
+.about_us a:hover {
   background-color: var(--mainColor); /* تغيير الخلفية عند التمرير */
   transform: scale(1.05); /* تأثير تكبير عند التمرير */
   transition: background-color 0.3s ease, transform 0.3s ease; /* تأثير سلس عند الانتقال */
 }
 
-.Featured_treats{
-  padding:30px ;
+@media screen and (max-width: 1184px) {
+  .about_us p {
+    width: 100%;
+  }
+}
+.Featured_treats {
+  padding: 30px;
 }
 
-.Featured_treats h5{
+.Featured_treats h5 {
   font-family: var(--subFont);
+  font-weight: bold;
+}
+
+.footer {
+  background: url(../img/Footer/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer h6 {
+  font-family: var(--subFont);
+  font-weight: bold;
+  color: var(--mainColor);
+}
+
+.footer i {
+  font-size: 30px;
+  color: var(--mainColor);
+  margin-right: 20px;
+}
+
+.recent img {
+  width: 90px;
+  height: 90px;
+  margin: 15px;
+}
+
+.recent p {
+  color: var(--mainColor);
   font-weight: bold;
 }

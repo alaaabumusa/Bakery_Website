@@ -1,238 +1,947 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bakery Website</title>
+    <link rel="icon" type="image/png" href="./assets/img/public/LOGO.svg" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bakery Website</title>
+    <!-- Bootstrap 5.3.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
 
-  <!-- Bootstrap 5.3.3 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/main.css" />
-</head>
+  <body>
+    <!--start nav-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/img/public/LOGO.svg"
+            alt="Logo"
+            width="70"
+            height="70"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--end nav-->
 
-<body>
-  
-  <div class="loader-container">
-    <div class="loader">
+    <main>
+      <!--start header-->
+      <header class="vh-100 header">
+        <div class="container">
+          <div class="row">
+            <h2>Delicious Cafe</h2>
+            <h1>Sweet Treats, Perfect Eats</h1>
+          </div>
+          <div>
+            <button type="button" class="btn btn shopNow">Shop Now</button>
+            <button
+              type="button"
+              class="btn btn btn-sm"
+              style="--bs-btn-color: var(--mainColor)"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </header>
+      <!--end header-->
 
-    </div>
-</div>
+      <!--start Top Product-->
+      <section class="top_products">
+        <div class="container my-5">
+          <h2 class="text-center mb-4">Top Products</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Product Card 1 -->
+            <div class="col">
+              <div class="card text-bg-dark">
+                <img
+                  src="./assets/img/Top Products/card1.png"
+                  class="card-img"
+                  alt="Apple Pie"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                >
+                  <h5 class="card-title">$40</h5>
+                  <h3 class="card-text">
+                    Whole Grain Bread
 
-  <!--start nav-->
-  <nav class="navbar navbar-expand-lg  fixed-top nav">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./assets/img/public/LOGO.svg" alt="Logo" width="70" height="70" />
-      </a>
-      <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Home</a>
+                    <i
+                      class="fa-solid fa-exclamation"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="100% natural ingredient suitable for all tastes!
+                    "
+                    ></i>
+                  </h3>
+
+                  <a class="btn btn-light mt-3 align-self-end">Add</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="col">
+              <div class="card text-bg-dark">
+                <img
+                  src="./assets/img/Top Products/card2.png"
+                  class="card-img"
+                  alt="Apple Pie"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                >
+                  <h5 class="card-title">$40</h5>
+                  <h3 class="card-text">
+                    Whole Grain Bread
+                    <i
+                      class="fa-solid fa-exclamation"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="100% natural ingredient suitable for all tastes!"
+                    ></i>
+                  </h3>
+
+                  <a class="btn btn-light mt-3 align-self-end">Add</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="col">
+              <div class="card text-bg-dark">
+                <img
+                  src="./assets/img/Top Products/card3.png"
+                  class="card-img"
+                  alt="Apple Pie"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                >
+                  <h5 class="card-title">$40</h5>
+                  <h3 class="card-text">
+                    Whole Grain Bread
+                    <i
+                      class="fa-solid fa-exclamation"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="100% natural ingredient suitable for all tastes!"
+                    ></i>
+                  </h3>
+                  <a class="btn btn-light mt-3 align-self-end">Add</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="col">
+              <div class="card text-bg-dark">
+                <img
+                  src="./assets/img/Top Products/card4.png"
+                  class="card-img"
+                  alt="Apple Pie"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                >
+                  <h5 class="card-title">$40</h5>
+                  <h3 class="card-text">
+                    Whole Grain Bread
+                    <i class="fa-solid fa-exclamation"></i>
+                  </h3>
+                  <a class="btn btn-light mt-3 align-self-end">Add</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="col">
+              <div class="card text-bg-dark">
+                <img
+                  src="./assets/img/Top Products/card5.png"
+                  class="card-img"
+                  alt="Apple Pie"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                >
+                  <h5 class="card-title">$40</h5>
+                  <h3 class="card-text">
+                    Whole Grain Bread
+                    <i class="fa-solid fa-exclamation"></i>
+                  </h3>
+                  <a class="btn btn-light mt-3 align-self-end">Add</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 6 -->
+            <div class="col">
+              <div class="card text-bg-dark">
+                <img
+                  src="./assets/img/Top Products/card6.png"
+                  class="card-img"
+                  alt="Apple Pie"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                >
+                  <h5 class="card-title">$40</h5>
+                  <h3 class="card-text">
+                    Whole Grain Bread
+                    <i class="fa-solid fa-exclamation"></i>
+                  </h3>
+
+                  <a class="btn btn-light mt-3 align-self-end">Add</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end Top product-->
+
+      <!--start First Order-->
+      <section class="first_order">
+        <div class="countdown">
+          <h1>
+            20% Off Your <br />
+            First Order
+          </h1>
+          <div class="timer">
+            <div class="time-unit">
+              <div class="time-value days">0</div>
+              <!-- يمكن وضع قيمة افتراضية هنا -->
+              <span class="unit">Days</span>
+            </div>
+            <div class="time-unit">
+              <div class="time-value hours">0</div>
+              <!-- يمكن وضع قيمة افتراضية هنا -->
+              <span class="unit">Hours</span>
+            </div>
+            <div class="time-unit">
+              <div class="time-value minutes">0</div>
+              <!-- يمكن وضع قيمة افتراضية هنا -->
+              <span class="unit">Min</span>
+            </div>
+            <div class="time-unit">
+              <div class="time-value seconds">0</div>
+              <!-- يمكن وضع قيمة افتراضية هنا -->
+              <span class="unit">Sec</span>
+            </div>
+          </div>
+        </div>
+        <a href="#">Learn More</a>
+      </section>
+
+      <!--start Menu-->
+      <section class="menu align-items-center min-vh-100 container">
+        <h2>Explore More</h2>
+        <ul
+          class="nav nav-tabs justify-content-center"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="Cake-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#Cake-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="Cake-tab-pane"
+              aria-selected="true"
+            >
+              Cake
+            </button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Blog</a>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="Muffins-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#Muffins-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="Muffins-tab-pane"
+              aria-selected="false"
+            >
+              Muffins
+            </button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Contact Us</a>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="Croissant-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#Croissant-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="Croissant-tab-pane"
+              aria-selected="false"
+            >
+              Croissant
+            </button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Services</a>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="Bread-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#Bread-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="Bread-tab-pane"
+              aria-selected="false"
+            >
+              Bread
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="Tart-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#Tart-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="contact-tab-pane"
+              aria-selected="false"
+            >
+              Tart
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="Favorite-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#Favorite-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="contact-tab-pane"
+              aria-selected="false"
+            >
+              Favorite
+            </button>
           </li>
         </ul>
-      </div>
-    </div>
-  </nav>
-  <!--end nave-->
-  <main>
-  <header class="vh-100 header ">
-    <div class="container">
-      <div class="row">
-        <h2>Delicious Cafe</h2>
-        <h1>Sweet Treats, Perfect Eats</h1>
-      </div>
-      <div>
-        <button type="button" class="btn btn" style=" color: white; background-color: var(--subColor)">Shop Now</button>
-        <button type="button" class="btn btn btn-sm" style="--bs-btn-color: var(--mainColor)">Learn More</button>
-      </div>
-    </div>
-  </header>
-  <!--start Top Product-->
-  <section class="top_products">
-    <div class="container my-5">
-      <h2 class="text-center mb-4">Top Products</h2>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <!-- Product Card 1 -->
-        <div class="col">
-          <div class="card text-bg-dark">
-            <img src="./assets/img/Top Products/card1.png" class="card-img" alt="Apple Pie">
-            <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
-              <h5 class="card-title">$40</h5>
-              <h3 class="card-text">Whole Grain Bread
-                <i class="fa-solid fa-exclamation"></i>
-              </h3>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="Cake-tab-pane"
+            role="tabpanel"
+            aria-labelledby="Cake-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/cake/BasicBundtCake.png"
+                    class="card-img-top"
+                    alt="cake"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/cake/Cake_RECIPE.png"
+                    class="card-img-top"
+                    alt="cake"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/cake/ChocolateCakepng.webp"
+                    class="card-img-top"
+                    alt="cake"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/cake/Lanecake.png"
+                    class="card-img-top"
+                    alt="cake"
+                  />
+                </div>
+              </div>
 
-              <a class="btn btn-light mt-3 align-self-end">Add</a>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/cake/Lemon-Cake.png"
+                    class="card-img-top"
+                    alt="cake"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/cake/red-white-blue-cake.png"
+                    class="card-img-top"
+                    alt="cake"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="Muffins-tab-pane"
+            role="tabpanel"
+            aria-labelledby="Muffins-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/muffins/banana-muffins.png"
+                    class="card-img-top"
+                    alt="muffins"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/muffins/Blueberry-Muffins.png"
+                    class="card-img-top"
+                    alt="muffins"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/muffins/Glory-Muffins.png"
+                    class="card-img-top"
+                    alt="muffins"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/muffins/LemonPoppyMuffins.png"
+                    class="card-img-top"
+                    alt="muffins"
+                  />
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/muffins/orange-Muffins.png"
+                    class="card-img-top"
+                    alt="muffins"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/muffins/Strawberry-Muffins.png"
+                    class="card-img-top"
+                    alt="muffins"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="Croissant-tab-pane"
+            role="tabpanel"
+            aria-labelledby="Croissant-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Croissant/turkeyCroissant.png"
+                    class="card-img-top"
+                    alt="Croissant"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Croissant/RecipesCroissant.png"
+                    class="card-img-top"
+                    alt="Croissant"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Croissant/croissant-bread.png"
+                    class="card-img-top"
+                    alt="Croissant"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Croissant/CroissantCroutons.png"
+                    class="card-img-top"
+                    alt="Croissant"
+                  />
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Croissant/croissant-dough.png"
+                    class="card-img-top"
+                    alt="Croissant"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Croissant/chocolate-crossiant.png"
+                    class="card-img-top"
+                    alt="Croissant"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="Bread-tab-pane"
+            role="tabpanel"
+            aria-labelledby="Bread-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Bread/BeerBread.png"
+                    class="card-img-top"
+                    alt="Bread"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Bread/grainsodaBread.png"
+                    class="card-img-top"
+                    alt="Bread"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Bread/honeyBread.png"
+                    class="card-img-top"
+                    alt="Bread"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Bread/Monkey-Bread.png"
+                    class="card-img-top"
+                    alt="Bread"
+                  />
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Bread/roasted-potato-bread.png"
+                    class="card-img-top"
+                    alt="Bread"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Bread/simpleBread.png"
+                    class="card-img-top"
+                    alt="Bread"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="Tart-tab-pane"
+            role="tabpanel"
+            aria-labelledby="Tart-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Tart/ButterTart.png"
+                    class="card-img-top"
+                    alt="Tart"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Tart/Chocolatetart.png"
+                    class="card-img-top"
+                    alt="Tart"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Tart/EggTarts.png"
+                    class="card-img-top"
+                    alt="Tart"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Tart/fruit-tart.png"
+                    class="card-img-top"
+                    alt="Tart"
+                  />
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Tart/onion-tart.png"
+                    class="card-img-top"
+                    alt="Tart"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Tart/PearTart.png"
+                    class="card-img-top"
+                    alt="Tart"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="Favorite-tab-pane"
+            role="tabpanel"
+            aria-labelledby="Favorite-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Tart/fruit-tart.png"
+                    class="card-img-top"
+                    alt="Tart"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/muffins/LemonPoppyMuffins.png"
+                    class="card-img-top"
+                    alt="muffins"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Croissant/CroissantCroutons.png"
+                    class="card-img-top"
+                    alt="Croissant"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/cake/ChocolateCakepng.webp"
+                    class="card-img-top"
+                    alt="cake"
+                  />
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Bread/honeyBread.png"
+                    class="card-img-top"
+                    alt="Bread"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./assets/img/menu/Tart/PearTart.png"
+                    class="card-img-top"
+                    alt="Tart"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Product Card 2 -->
-        <div class="col">
-          <div class="card text-bg-dark">
-            <img src="./assets/img/Top Products/card2.png" class="card-img" alt="Apple Pie">
-            <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
-              <h5 class="card-title">$40</h5>
-              <h3 class="card-text">Whole Grain Bread
-                <i class="fa-solid fa-exclamation"></i>
-              </h3>
+      </section>
 
-              <a class="btn btn-light mt-3 align-self-end">Add</a>
+      <!--start About us-->
+      <section class="about_us">
+        <div class="container">
+          <h2 class="text-center mb-4">About Us</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequatur eos aliquid est cumque labore, praesentium nihil atque
+            minima. Labore aspernatur adipisci atque mollitia iusto, quasi
+            possimus sunt. Error laborum reprehenderit officia enim est
+            blanditiis facilis deleniti perferendis obcaecati nemo voluptatibus
+            a dolor esse quod nostrum eos, minima dignissimos, architecto
+            quaerat necessitatibus? Obcaecati in sed, eos, veniam quam, illo
+            maiores explicabo nisi aut ratione omnis voluptatem blanditiis
+            repellendus laudantium deleniti. Totam animi nihil odit. Atque,
+            quod?
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </section>
+
+      <!--start Featured Treats-->
+      <section class="Featured_treats">
+        <div class="container">
+          <h2 class="text-center mb-4">Featured Treats</h2>
+          <div class="card-group grid gap-3">
+            <div class="card border border-0">
+              <img
+                src="./assets/img/Featured_Treats/puff_pastry.png"
+                class="card-img-top"
+                alt="puff_pastry"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  Puff Pastry&nbsp; &nbsp; &nbsp; $8
+                </h5>
+              </div>
+            </div>
+            <div class="card border border-0">
+              <img
+                src="./assets/img/Featured_Treats/doughnuts.png"
+                class="card-img-top"
+                alt="doughnuts"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  Doughnuts&nbsp; &nbsp; &nbsp; $8
+                </h5>
+              </div>
+            </div>
+            <div class="card border border-0">
+              <img
+                src="./assets/img/Featured_Treats/brownies.png"
+                class="card-img-top"
+                alt="brownies"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  Brownies &nbsp; &nbsp; &nbsp; $8
+                </h5>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Product Card 3 -->
-        <div class="col">
-          <div class="card text-bg-dark">
-            <img src="./assets/img/Top Products/card3.png" class="card-img" alt="Apple Pie">
-            <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
-              <h5 class="card-title">$40</h5>
-              <h3 class="card-text">Whole Grain Bread
-                <i class="fa-solid fa-exclamation"></i>
-              </h3>
-              <a class="btn btn-light mt-3 align-self-end">Add</a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center text-white">
+      <!-- Section: Social media and Logo -->
+      <div class="container py-4">
+        <div
+          class="d-flex justify-content-between align-items-center flex-column flex-md-row"
+        >
+          <!-- Logo -->
+          <div class="mb-3 mb-md-0">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./assets/img/public/LOGO.svg"
+                alt="Logo"
+                width="100"
+                height="100"
+              />
+            </a>
+          </div>
+          <!-- Social Media Links -->
+          <div>
+            <h5 class="mb-3">Follow us:</h5>
+            <div>
+              <a href="#" class="me-3">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="me-3">
+                <i class="fab fa-pinterest"></i>
+              </a>
+              <a href="#" class="me-3">
+                <i class="fas fa-phone"></i>
+              </a>
+              <a href="#" class="">
+                <i class="fab fa-instagram"></i>
+              </a>
             </div>
           </div>
         </div>
-        <!-- Product Card 4 -->
-        <div class=" col">
-          <div class="card text-bg-dark">
-            <img src="./assets/img/Top Products/card4.png" class="card-img" alt="Apple Pie">
-            <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
-              <h5 class="card-title">$40</h5>
-              <h3 class="card-text">Whole Grain Bread
-                <i class="fa-solid fa-exclamation"></i>
-              </h3>
-              <a class="btn btn-light mt-3 align-self-end">Add</a>
+      </div>
+
+      <!-- Section: Links -->
+      <section class="py-4">
+        <div class="container">
+          <div class="row text-center text-md-start justify-content-center">
+            <!-- Contact Us Column -->
+            <div class="col-md-4 col-lg-3 mb-4">
+              <h6 class="text-uppercase fw-bold">Contact Us</h6>
+              <hr class="mb-4 mt-0 mx-auto" />
+              <p><i class="fas fa-phone me-2"></i> (456) 789-12301</p>
+              <p><i class="fas fa-envelope me-2"></i> info@modrino.co.uk</p>
+              <p><i class="fas fa-home me-2"></i> New York, NY 10012, US</p>
+            </div>
+
+            <!-- Explore Column -->
+            <div class="col-md-4 col-lg-3 mb-4">
+              <h6 class="text-uppercase fw-bold">Explore</h6>
+              <hr class="mb-4 mt-0 mx-auto" />
+              <p>
+                <a href="#!" class="text-white text-decoration-none">Home</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white text-decoration-none">Blog</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white text-decoration-none"
+                  >Contact Us</a
+                >
+              </p>
+              <p>
+                <a href="#!" class="text-white text-decoration-none"
+                  >Services</a
+                >
+              </p>
+            </div>
+
+            <!-- Recent News Column -->
+            <div class="col-md-4 col-lg-3 mb-4">
+              <h6 class="text-uppercase fw-bold">Recent News</h6>
+              <hr class="mb-4 mt-0 mx-auto" />
+              <div class="recent">
+                <div class="d-flex align-items-center mb-3 gap-3">
+                  <img
+                    src="./assets/img/Footer/sweet1.png"
+                    alt="sweet"
+                    width="50"
+                  />
+                  <p>June 14,2024</p>
+                  <span>Puff pastry bliss.</span>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <img
+                    src="./assets/img/Footer/sweet2.png"
+                    alt="sweet"
+                    width="50"
+                  />
+                  <p>June 14,2024</p>
+                  <span>Puff pastry bliss.</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Product Card 5 -->
-        <div class="col">
-          <div class="card text-bg-dark">
-            <img src="./assets/img/Top Products/card5.png" class="card-img" alt="Apple Pie">
-            <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
-              <h5 class="card-title">$40</h5>
-              <h3 class="card-text">Whole Grain Bread
-                <i class="fa-solid fa-exclamation"></i>
-              </h3>
-              <a class="btn btn-light mt-3 align-self-end">Add</a>
-            </div>
-          </div>
-        </div>
-        <!-- Product Card 6 -->
-        <div class="col">
-          <div class="card text-bg-dark">
-            <img src="./assets/img/Top Products/card6.png" class="card-img" alt="Apple Pie">
-            <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
-              <h5 class="card-title">$40</h5>
-              <h3 class="card-text">Whole Grain Bread
-                <i class="fa-solid fa-exclamation"></i>
-              </h3>
+      </section>
 
-              <a class="btn btn-light mt-3 align-self-end">Add</a>
-            </div>
-          </div>
-        </div>
-
+      <!-- Copyright -->
+      <div class="text-center py-3">
+        <span>© 2024 Bake House, All rights reserved.</span>
       </div>
-    </div>
-  </section>
-  <!--end Top product-->
+    </footer>
 
-  <section class="first_order">
-    <div class="countdown">
-      <h1>20% Off Your <br> First Order</h1>
-      <div class="timer">
-        <div class="time-unit">
-          <div class="time-value days">0</div> <!-- يمكن وضع قيمة افتراضية هنا -->
-          <span class="unit">Days</span>
-        </div>
-        <div class="time-unit">
-          <div class="time-value hours">0</div> <!-- يمكن وضع قيمة افتراضية هنا -->
-          <span class="unit">Hours</span>
-        </div>
-        <div class="time-unit">
-          <div class="time-value minutes">0</div> <!-- يمكن وضع قيمة افتراضية هنا -->
-          <span class="unit">Min</span>
-        </div>
-        <div class="time-unit">
-          <div class="time-value seconds">0</div> <!-- يمكن وضع قيمة افتراضية هنا -->
-          <span class="unit">Sec</span>
-        </div>
-      </div>
-    </div>
-    <a href="#">Learn More</a>
-  </section>
-  
-  <section class="about_us">
-    <div class="container">
-      
-      <h2 class="text-center mb-4">About Us</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur eos aliquid est cumque labore, praesentium nihil atque minima. Labore aspernatur adipisci atque mollitia iusto, quasi possimus sunt. Error laborum reprehenderit officia enim est blanditiis facilis deleniti perferendis obcaecati nemo voluptatibus a dolor esse quod nostrum eos, minima dignissimos, architecto quaerat necessitatibus? Obcaecati in sed, eos, veniam quam, illo maiores explicabo nisi aut ratione omnis voluptatem blanditiis repellendus laudantium deleniti. Totam animi nihil odit. Atque, quod?
-         </p>
-         <a href="#">Read More</a>
-      
-    </div>
-
-  </section>
-
-
-
-  <section class="Featured_treats">
-    <div class="container">
-    <h2 class="text-center mb-4">Featured Treats</h2>
-    <div class="card-group grid gap-3">
-      <div class="card border border-0">
-        <img src="./assets/img/Featured_Treats/puff_pastry.png" class="card-img-top" alt="puff_pastry">
-        <div class="card-body">
-          <h5 class="card-title text-center">Puff Pastry&nbsp; &nbsp; &nbsp; $8</h5>
-         
-        </div>
-      </div>
-      <div class="card border border-0">
-        <img src="./assets/img/Featured_Treats/doughnuts.png" class="card-img-top" alt="doughnuts">
-        <div class="card-body">
-          <h5 class="card-title text-center ">Doughnuts&nbsp; &nbsp; &nbsp; $8</h5>
-          
-        </div>
-      </div>
-      <div class="card border border-0">
-        <img src="./assets/img/Featured_Treats/brownies.png" class="card-img-top" alt="brownies">
-        <div class="card-body">
-          <h5 class="card-title text-center">Brownies &nbsp; &nbsp; &nbsp; $8</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="./assets/js/main.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
