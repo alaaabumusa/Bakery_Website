@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bakery Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <link rel="icon" type="image/png" href="./assets/img/public/LOGO.svg" />
 
     <!-- Bootstrap 5.3.3 -->
@@ -51,16 +55,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#Blog">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#about_us">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#Menu">Menu</a>
             </li>
           </ul>
         </div>
@@ -73,17 +77,23 @@
       <header class="vh-100 header">
         <div class="container">
           <div class="row">
-            <h2>Delicious Cafe</h2>
-            <h1>Sweet Treats, Perfect Eats</h1>
+            <h2 data-aos="fade-down" data-aos-duration="1000">
+              Delicious Cafe
+            </h2>
+
+            <h1 data-aos="fade-up" data-aos-duration="1200">
+              Sweet Treats, Perfect Eats
+            </h1>
           </div>
+
           <div>
-            <button type="button" class="btn btn shopNow">Shop Now</button>
             <button
               type="button"
-              class="btn btn btn-sm"
-              style="--bs-btn-color: var(--mainColor)"
+              class="btn btn-warning shopNow"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
             >
-              Learn More
+              Shop Now
             </button>
           </div>
         </div>
@@ -93,10 +103,16 @@
       <!--start Top Product-->
       <section class="top_products">
         <div class="container my-5">
-          <h2 class="text-center mb-4">Top Products</h2>
+          <h2
+            class="text-center mb-4"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            Top Products
+          </h2>
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <!-- Product Card 1 -->
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1200">
               <div class="card text-bg-dark">
                 <img
                   src="./assets/img/Top Products/card1.png"
@@ -109,22 +125,19 @@
                   <h5 class="card-title">$40</h5>
                   <h3 class="card-text">
                     Whole Grain Bread
-
                     <i
                       class="fa-solid fa-exclamation"
                       data-bs-toggle="tooltip"
                       data-bs-placement="top"
-                      data-bs-title="100% natural ingredient suitable for all tastes!
-                    "
+                      data-bs-title="100% natural ingredient suitable for all tastes!"
                     ></i>
                   </h3>
-
                   <a class="btn btn-light mt-3 align-self-end">Add</a>
                 </div>
               </div>
             </div>
             <!-- Product Card 2 -->
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1400">
               <div class="card text-bg-dark">
                 <img
                   src="./assets/img/Top Products/card2.png"
@@ -144,13 +157,12 @@
                       data-bs-title="100% natural ingredient suitable for all tastes!"
                     ></i>
                   </h3>
-
                   <a class="btn btn-light mt-3 align-self-end">Add</a>
                 </div>
               </div>
             </div>
             <!-- Product Card 3 -->
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1600">
               <div class="card text-bg-dark">
                 <img
                   src="./assets/img/Top Products/card3.png"
@@ -175,7 +187,7 @@
               </div>
             </div>
             <!-- Product Card 4 -->
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1800">
               <div class="card text-bg-dark">
                 <img
                   src="./assets/img/Top Products/card4.png"
@@ -189,17 +201,18 @@
                   <h3 class="card-text">
                     Whole Grain Bread
                     <i
-                    class="fa-solid fa-exclamation"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    data-bs-title="100% natural ingredient suitable for all tastes!"
-                  ></i>                  </h3>
+                      class="fa-solid fa-exclamation"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="100% natural ingredient suitable for all tastes!"
+                    ></i>
+                  </h3>
                   <a class="btn btn-light mt-3 align-self-end">Add</a>
                 </div>
               </div>
             </div>
             <!-- Product Card 5 -->
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="2000">
               <div class="card text-bg-dark">
                 <img
                   src="./assets/img/Top Products/card5.png"
@@ -213,17 +226,18 @@
                   <h3 class="card-text">
                     Whole Grain Bread
                     <i
-                    class="fa-solid fa-exclamation"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    data-bs-title="100% natural ingredient suitable for all tastes!"
-                  ></i>                  </h3>
+                      class="fa-solid fa-exclamation"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="100% natural ingredient suitable for all tastes!"
+                    ></i>
+                  </h3>
                   <a class="btn btn-light mt-3 align-self-end">Add</a>
                 </div>
               </div>
             </div>
             <!-- Product Card 6 -->
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="2200">
               <div class="card text-bg-dark">
                 <img
                   src="./assets/img/Top Products/card6.png"
@@ -237,12 +251,12 @@
                   <h3 class="card-text">
                     Whole Grain Bread
                     <i
-                    class="fa-solid fa-exclamation"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    data-bs-title="100% natural ingredient suitable for all tastes!"
-                  ></i>                  </h3>
-
+                      class="fa-solid fa-exclamation"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="100% natural ingredient suitable for all tastes!"
+                    ></i>
+                  </h3>
                   <a class="btn btn-light mt-3 align-self-end">Add</a>
                 </div>
               </div>
@@ -253,26 +267,23 @@
       <!--end Top product-->
 
       <!--start First Order-->
-      <section class="first_order">
-        <div class="countdown">
-          <h1>
+      <section class="first_order" data-aos="fade-up">
+        <div class="countdown" data-aos="zoom-in">
+          <h1 data-aos="fade-right">
             20% Off Your <br />
             First Order
           </h1>
-          <div class="timer">
+          <div class="timer" data-aos="fade-left">
             <div class="time-unit">
               <div class="time-value days">0</div>
-            
               <span class="unit">Days</span>
             </div>
             <div class="time-unit">
               <div class="time-value hours">0</div>
-              <!-- يمكن وضع قيمة افتراضية هنا -->
               <span class="unit">Hours</span>
             </div>
             <div class="time-unit">
               <div class="time-value minutes">0</div>
-           
               <span class="unit">Min</span>
             </div>
             <div class="time-unit">
@@ -281,12 +292,14 @@
             </div>
           </div>
         </div>
-        <a href="#">Learn More</a>
+        <a href="#" data-aos="zoom-in-up">Learn More</a>
       </section>
+      <!--end First Order-->
 
       <!--start Menu-->
-      <section class="menu align-items-center min-vh-100 container">
-        <h2>Explore More</h2>
+      <section class="menu align-items-center min-vh-100 container" id="Menu">
+        <h2 data-aos="fade-up" data-aos-duration="1000">Explore More</h2>
+
         <ul
           class="nav nav-tabs justify-content-center"
           id="myTab"
@@ -302,6 +315,8 @@
               role="tab"
               aria-controls="Cake-tab-pane"
               aria-selected="true"
+              data-aos="fade-in"
+              data-aos-duration="1000"
             >
               Cake
             </button>
@@ -316,6 +331,9 @@
               role="tab"
               aria-controls="Muffins-tab-pane"
               aria-selected="false"
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="200"
             >
               Muffins
             </button>
@@ -330,6 +348,9 @@
               role="tab"
               aria-controls="Croissant-tab-pane"
               aria-selected="false"
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="400"
             >
               Croissant
             </button>
@@ -344,6 +365,9 @@
               role="tab"
               aria-controls="Bread-tab-pane"
               aria-selected="false"
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="600"
             >
               Bread
             </button>
@@ -358,6 +382,9 @@
               role="tab"
               aria-controls="contact-tab-pane"
               aria-selected="false"
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="800"
             >
               Tart
             </button>
@@ -372,6 +399,9 @@
               role="tab"
               aria-controls="contact-tab-pane"
               aria-selected="false"
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
             >
               Favorite
             </button>
@@ -386,63 +416,141 @@
             tabindex="0"
           >
             <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col">
+              <div class="col" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card h-100">
                   <img
                     src="./assets/img/menu/cake/BasicBundtCake.png"
                     class="card-img-top"
-                    alt="cake"
+                    alt="Basic Bundt Cake"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Basic Bundt Cake</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col">
+
+              <div
+                class="col"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
                 <div class="card h-100">
                   <img
                     src="./assets/img/menu/cake/Cake_RECIPE.png"
                     class="card-img-top"
-                    alt="cake"
+                    alt="Cake RECIPE"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Cake RECIPE</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col">
+
+              <div
+                class="col"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+              >
                 <div class="card h-100">
                   <img
-                    src="./assets/img/menu/cake/ChocolateCakepng.webp"
+                    src="./assets/img/menu/cake/ChocolateCake.png"
                     class="card-img-top"
-                    alt="cake"
+                    alt="Chocolate Cake"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Chocolate Cake</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col">
+
+              <div
+                class="col"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+              >
                 <div class="card h-100">
                   <img
                     src="./assets/img/menu/cake/Lanecake.png"
                     class="card-img-top"
-                    alt="cake"
+                    alt="Lane Cake"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Lane Cake</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="col">
+              <div
+                class="col"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
                 <div class="card h-100">
                   <img
                     src="./assets/img/menu/cake/Lemon-Cake.png"
                     class="card-img-top"
-                    alt="cake"
+                    alt="Lemon Cake"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Lemon Cake</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col">
+
+              <div
+                class="col"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+              >
                 <div class="card h-100">
                   <img
                     src="./assets/img/menu/cake/red-white-blue-cake.png"
                     class="card-img-top"
-                    alt="cake"
+                    alt="RedWhiteBlue Cake"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">RedWhiteBlue Cake</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div
             class="tab-pane fade"
             id="Muffins-tab-pane"
@@ -451,63 +559,141 @@
             tabindex="0"
           >
             <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col">
+              <div class="col" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card h-100">
                   <img
                     src="./assets/img/menu/muffins/banana-muffins.png"
                     class="card-img-top"
-                    alt="muffins"
+                    alt="Banana Muffins"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Banana Muffins</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col">
+
+              <div
+                class="col"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
                 <div class="card h-100">
                   <img
                     src="./assets/img/menu/muffins/Blueberry-Muffins.png"
                     class="card-img-top"
-                    alt="muffins"
+                    alt="Blueberry Muffins"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Blueberry Muffins</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col">
+
+              <div
+                class="col"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+              >
                 <div class="card h-100">
                   <img
                     src="./assets/img/menu/muffins/Glory-Muffins.png"
                     class="card-img-top"
-                    alt="muffins"
+                    alt="Glory Muffins"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Glory Muffins</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col">
+
+              <div
+                class="col"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+              >
                 <div class="card h-100">
                   <img
                     src="./assets/img/menu/muffins/LemonPoppyMuffins.png"
                     class="card-img-top"
-                    alt="muffins"
+                    alt="LemonPoppy Muffins"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">LemonPoppy Muffins</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="col">
+              <div
+                class="col"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
                 <div class="card h-100">
                   <img
                     src="./assets/img/menu/muffins/orange-Muffins.png"
                     class="card-img-top"
-                    alt="muffins"
+                    alt="Orange Muffins"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Orange Muffins</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col">
+
+              <div
+                class="col"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+              >
                 <div class="card h-100">
                   <img
                     src="./assets/img/menu/muffins/Strawberry-Muffins.png"
                     class="card-img-top"
-                    alt="muffins"
+                    alt="Strawberry Muffins"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Strawberry Muffins</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div
             class="tab-pane fade"
             id="Croissant-tab-pane"
@@ -523,6 +709,14 @@
                     class="card-img-top"
                     alt="Croissant"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Turkey Croissant</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -532,6 +726,14 @@
                     class="card-img-top"
                     alt="Croissant"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Recipes Croissant</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -541,6 +743,14 @@
                     class="card-img-top"
                     alt="Croissant"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Bread Croissant</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -550,6 +760,14 @@
                     class="card-img-top"
                     alt="Croissant"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Croutons Croissant</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -560,6 +778,14 @@
                     class="card-img-top"
                     alt="Croissant"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Dough Croissant</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -569,10 +795,19 @@
                     class="card-img-top"
                     alt="Croissant"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">chocolate Croissant</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div
             class="tab-pane fade"
             id="Bread-tab-pane"
@@ -588,6 +823,14 @@
                     class="card-img-top"
                     alt="Bread"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Beer Bread</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -597,6 +840,14 @@
                     class="card-img-top"
                     alt="Bread"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Grainsoda Bread</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -606,6 +857,14 @@
                     class="card-img-top"
                     alt="Bread"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Honey Bread</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -615,6 +874,14 @@
                     class="card-img-top"
                     alt="Bread"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Monkey Bread</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -625,6 +892,14 @@
                     class="card-img-top"
                     alt="Bread"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Roasted Potato Bread</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -634,10 +909,19 @@
                     class="card-img-top"
                     alt="Bread"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Simple Bread</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div
             class="tab-pane fade"
             id="Tart-tab-pane"
@@ -653,6 +937,14 @@
                     class="card-img-top"
                     alt="Tart"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Butter Tart</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -662,6 +954,14 @@
                     class="card-img-top"
                     alt="Tart"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Chocolate Tart</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -671,6 +971,14 @@
                     class="card-img-top"
                     alt="Tart"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Egg Tart</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -680,9 +988,16 @@
                     class="card-img-top"
                     alt="Tart"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Fruit Tart</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-
               <div class="col">
                 <div class="card h-100">
                   <img
@@ -690,6 +1005,14 @@
                     class="card-img-top"
                     alt="Tart"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Onion Tart</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -699,6 +1022,14 @@
                     class="card-img-top"
                     alt="Tart"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Pear Tart</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -719,6 +1050,14 @@
                     class="card-img-top"
                     alt="Tart"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Fruit Tart</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -728,6 +1067,14 @@
                     class="card-img-top"
                     alt="muffins"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">LemonPoppy Muffins</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -737,15 +1084,31 @@
                     class="card-img-top"
                     alt="Croissant"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Croutons Croissant</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card h-100">
                   <img
-                    src="./assets/img/menu/cake/ChocolateCakepng.webp"
+                    src="./assets/img/menu/cake/ChocolateCake.png"
                     class="card-img-top"
                     alt="cake"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Chocolate Cake</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -756,6 +1119,14 @@
                     class="card-img-top"
                     alt="Bread"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Honey Bread</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col">
@@ -765,77 +1136,233 @@
                     class="card-img-top"
                     alt="Tart"
                   />
+                  <div class="card-overlay">
+                    <h4 class="card-title">Pear Tart</h4>
+                    <p class="card-price">$25.00</p>
+                    <div class="card-icons">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!--end Menu-->
 
       <!--start About us-->
-      <section class="about_us">
+      <section class="about_us" id="about_us" data-aos="fade-up">
         <div class="container">
-          <h2 class="text-center mb-4">About Us</h2>
-          <p>
+          <h2 class="text-center mb-4" data-aos="fade-down">About Us</h2>
+          <p data-aos="fade-right">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequatur eos aliquid est cumque labore, praesentium nihil atque
             minima. Labore aspernatur adipisci atque mollitia iusto, quasi
             possimus sunt. Error laborum reprehenderit officia enim est
             blanditiis facilis deleniti perferendis obcaecati nemo voluptatibus
             a dolor esse quod nostrum eos, minima dignissimos, architecto
-            quaerat necessitatibus? Obcaecati in sed, eos, veniam quam, illo
-            maiores explicabo nisi aut ratione omnis voluptatem blanditiis
-            repellendus laudantium deleniti. Totam animi nihil odit. Atque,
-            quod?
           </p>
-          <a href="#">Read More</a>
+          <a href="#" data-aos="zoom-in">Read More</a>
         </div>
       </section>
+      <!--end About us-->
 
-      <!--start Featured Treats-->
-      <section class="Featured_treats">
+      <!--start customer-testimonials -->
+      <section class="customer-testimonials py-5 my-5" data-aos="fade-up">
         <div class="container">
-          <h2 class="text-center mb-4">Featured Treats</h2>
-          <div class="card-group grid gap-3">
-            <div class="card border border-0">
-              <img
-                src="./assets/img/Featured_Treats/puff_pastry.png"
-                class="card-img-top"
-                alt="puff_pastry"
-              />
-              <div class="card-body">
-                <h5 class="card-title text-center">
-                  Puff Pastry&nbsp; &nbsp; &nbsp; $8
-                </h5>
+          <h2 class="text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+            What Our Customers Say
+          </h2>
+          <div
+            id="testimonialCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="carousel-inner">
+              <!-- Testimonial 1 -->
+              <div class="carousel-item active">
+                <div class="testimonial text-center" data-aos="fade-up">
+                  <img
+                    src="./assets/img/Blog/persona/John Doe.jpg"
+                    alt="Customer 1"
+                    class="testimonial-img rounded-circle mb-3"
+                  />
+                  <blockquote class="blockquote">
+                    <p>
+                      "The best bakery I've ever been to! The croissants are to
+                      die for!"
+                    </p>
+                    <footer class="blockquote-footer">
+                      John Doe, <cite title="Source Title">New York</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="carousel-item">
+                <div class="testimonial text-center" data-aos="fade-up">
+                  <img
+                    src="./assets/img/Blog/persona/Sarah Lee.jpg"
+                    alt="Customer 2"
+                    class="testimonial-img rounded-circle mb-3"
+                  />
+                  <blockquote class="blockquote">
+                    <p>
+                      "Baked fresh daily! The sourdough bread is irresistible
+                      every time!"
+                    </p>
+                    <footer class="blockquote-footer">
+                      Sarah Lee, <cite title="Source Title">London</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="carousel-item">
+                <div class="testimonial text-center" data-aos="fade-up">
+                  <img
+                    src="./assets/img/Blog/persona/Emily Smith.jpg"
+                    alt="Customer 3"
+                    class="testimonial-img rounded-circle mb-3"
+                  />
+                  <blockquote class="blockquote">
+                    <p>
+                      "A fantastic place for delicious pastries. My family loves
+                      it!"
+                    </p>
+                    <footer class="blockquote-footer">
+                      Emily Smith, <cite title="Source Title">Los Angeles</cite>
+                    </footer>
+                  </blockquote>
+                </div>
               </div>
             </div>
-            <div class="card border border-0">
-              <img
-                src="./assets/img/Featured_Treats/doughnuts.png"
-                class="card-img-top"
-                alt="doughnuts"
-              />
-              <div class="card-body">
-                <h5 class="card-title text-center">
-                  Doughnuts&nbsp; &nbsp; &nbsp; $8
-                </h5>
+            <!-- Carousel Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--end customer-testimonials -->
+
+      <!--blog -->
+      <section class="blog-posts py-5 my-5" id="Blog" data-aos="fade-up">
+        <div class="container">
+          <h2 class="text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+            Latest Blog Posts
+          </h2>
+
+          <!-- Blog Post Grid -->
+          <div class="row">
+            <!-- Blog Post 1 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card">
+                <img
+                  src="./assets/img/Blog/Delicious Pastry Recipes.jpg"
+                  class="card-img-top"
+                  alt="Blog 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Delicious Pastry Recipes</h5>
+                  <p class="card-text">
+                    Learn how to make the perfect puff pastry at home. Follow
+                    our simple recipe steps and wow your friends and family!
+                  </p>
+                  <a href="#" class="btn btn-warning">Read More</a>
+                  <div class="d-flex justify-content-between mt-3">
+                    <button class="btn-like">
+                      <i class="fas fa-thumbs-up"></i> Like
+                    </button>
+                    <button class="btn-comment">
+                      <i class="fas fa-comments"></i> Comment
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card border border-0">
-              <img
-                src="./assets/img/Featured_Treats/brownies.png"
-                class="card-img-top"
-                alt="brownies"
-              />
-              <div class="card-body">
-                <h5 class="card-title text-center">
-                  Brownies &nbsp; &nbsp; &nbsp; $8
-                </h5>
+            <!-- Blog Post 2 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="card">
+                <img
+                  src="./assets/img/Blog/Baking Tips for Beginners.jpg"
+                  class="card-img-top"
+                  alt="Blog 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Baking Tips for Beginners</h5>
+                  <p class="card-text">
+                    If you're new to baking, here are some helpful tips to make
+                    your first bake a success. Start with the basics and improve
+                    every time!
+                  </p>
+                  <a href="#" class="btn btn-warning">Read More</a>
+                  <div class="d-flex justify-content-between mt-3">
+                    <button class="btn-like">
+                      <i class="fas fa-thumbs-up"></i> Like
+                    </button>
+                    <button class="btn-comment">
+                      <i class="fas fa-comments"></i> Comment
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Blog Post 3 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="card">
+                <img
+                  src="./assets/img/Blog/Our Top-Selling Breads.jpg"
+                  class="card-img-top"
+                  alt="Blog 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Our Top-Selling Breads</h5>
+                  <p class="card-text">
+                    Discover our most popular breads and learn what makes them
+                    so special! Freshly baked daily with love and care.
+                  </p>
+                  <a href="#" class="btn btn-warning">Read More</a>
+                  <div class="d-flex justify-content-between mt-3">
+                    <button class="btn-like">
+                      <i class="fas fa-thumbs-up"></i> Like
+                    </button>
+                    <button class="btn-comment">
+                      <i class="fas fa-comments"></i> Comment
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- End Blog -->
     </main>
 
     <!-- Footer -->
@@ -846,7 +1373,7 @@
           class="d-flex justify-content-between align-items-center flex-column flex-md-row"
         >
           <!-- Logo -->
-          <div class="mb-3 mb-md-0">
+          <div class="mb-3 mb-md-0" data-aos="fade-up" data-aos-duration="1000">
             <a class="navbar-brand" href="#">
               <img
                 src="./assets/img/public/LOGO.svg"
@@ -856,20 +1383,36 @@
               />
             </a>
           </div>
+
           <!-- Social Media Links -->
-          <div>
+          <div data-aos="fade-up" data-aos-duration="1200">
             <h5 class="mb-3">Follow us:</h5>
             <div>
-              <a href="#" class="me-3">
+              <a
+                href="#"
+                class="me-3"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
                 <i class="fab fa-facebook"></i>
               </a>
-              <a href="#" class="me-3">
+              <a
+                href="#"
+                class="me-3"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
                 <i class="fab fa-pinterest"></i>
               </a>
-              <a href="#" class="me-3">
+              <a
+                href="#"
+                class="me-3"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
                 <i class="fas fa-phone"></i>
               </a>
-              <a href="#" class="">
+              <a href="#" data-aos="zoom-in" data-aos-duration="1000">
                 <i class="fab fa-instagram"></i>
               </a>
             </div>
@@ -882,7 +1425,11 @@
         <div class="container">
           <div class="row text-center text-md-start justify-content-center">
             <!-- Contact Us Column -->
-            <div class="col-md-4 col-lg-3 mb-4">
+            <div
+              class="col-md-4 col-lg-3 mb-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <h6 class="text-uppercase fw-bold">Contact Us</h6>
               <hr class="mb-4 mt-0 mx-auto" />
               <p><i class="fas fa-phone me-2"></i> (456) 789-12301</p>
@@ -891,19 +1438,23 @@
             </div>
 
             <!-- Explore Column -->
-            <div class="col-md-4 col-lg-3 mb-4">
+            <div
+              class="col-md-4 col-lg-3 mb-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <h6 class="text-uppercase fw-bold">Explore</h6>
               <hr class="mb-4 mt-0 mx-auto" />
               <p class="explore">
                 <a href="#!" class="text-white text-decoration-none">Home</a>
               </p>
               <p>
-                <a href="#!" class="text-white text-decoration-none">Blog</a>
+                <a href="#!" class="text-white text-decoration-none"
+                  >Top Products</a
+                >
               </p>
               <p>
-                <a href="#!" class="text-white text-decoration-none"
-                  >Contact Us</a
-                >
+                <a href="#!" class="text-white text-decoration-none">Menu</a>
               </p>
               <p>
                 <a href="#!" class="text-white text-decoration-none"
@@ -913,7 +1464,11 @@
             </div>
 
             <!-- Recent News Column -->
-            <div class="col-md-4 col-lg-3 mb-4">
+            <div
+              class="col-md-4 col-lg-3 mb-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <h6 class="text-uppercase fw-bold">Recent News</h6>
               <hr class="mb-4 mt-0 mx-auto" />
               <div class="recent">
@@ -942,11 +1497,13 @@
       </section>
 
       <!-- Copyright -->
-      <div class="text-center py-3">
+      <div class="text-center py-3" data-aos="fade-up" data-aos-duration="1800">
         <span>© 2024 Bake House, All rights reserved.</span>
       </div>
     </footer>
+    <!-- Footer -->
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

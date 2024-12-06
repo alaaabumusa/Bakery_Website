@@ -6,7 +6,7 @@ const tooltipList = [...tooltipTriggerList].map(
 );
 
 const countDown = () => {
-  const countDownDate = new Date("2025-2-5 23:59:59").getTime();
+  const countDownDate = new Date("2027-1-5 23:59:59").getTime();
   const now = new Date().getTime();
   const distance = countDownDate - now;
 
@@ -26,3 +26,8 @@ const countDown = () => {
 setInterval(() => {
   countDown();
 }, 1000);
+
+AOS.init({
+  duration: 1000, 
+  once: true  
+});

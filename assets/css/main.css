@@ -11,6 +11,7 @@ h2 {
   background: transparent;
   color: white;
 }
+
 .navbar-nav .nav-link {
   color: white;
   padding: 10px 20px;
@@ -192,18 +193,64 @@ h1 {
   color: #f5f5f5;
   background-color: var(--subColor);
 }
+.menu .card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  text-align: center;
+}
 
-.card-img-top:hover {
+.menu .card:hover .card-overlay {
+  opacity: 1;
+}
+
+.menu .card-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.menu .card-price {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.menu .card-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+
+.menu .card-icons i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu .card-icons i:hover {
+  color: #f39c12; /* تغيير اللون عند التمرير */
+}
+.menu .card-img-top:hover {
   transform: scale(1.05); 
   transition: transform 0.3s ease;
 }
 
 .about_us {
-  background: url(../img/About_us/about_us.jpg);
+  background: url(../img/About_us/about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 550px;
   padding: 50px 0;
   text-align: center;
 }
@@ -214,6 +261,7 @@ h1 {
 }
 
 .about_us p {
+  font-size: 1.5rem;
   width: 50%;
   color: #b9b9b9;
   margin: auto;
@@ -241,14 +289,117 @@ h1 {
     width: 100%;
   }
 }
-.Featured_treats {
-  padding: 30px;
+.customer-testimonials {
+  background-color: #f8f9fa;
+  padding: 40px 0;
 }
 
-.Featured_treats h5 {
-  font-family: var(--subFont);
-  font-weight: bold;
+.testimonial {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
+}
+
+.blockquote-footer {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #f8c04f;
+}
+
+/* Adjust Carousel items */
+.carousel-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner {
+    max-width: 100%;
+  }
+}
+
+
+.blog-posts {
+  background-color: white;
+}
+
+.blog-posts .card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-posts .card:hover {
+  transform: translateY(-10px);
+}
+
+.blog-posts .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title .card-body{
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text  .card-body{
+  font-size: 14px;
+  color: #666;
+}
+
+.btn-warning {
+  background-color: var(--subColor);
+  border: none;
+  border-radius:10px ;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.btn-warning:hover {
+  background-color: var(--mainColor);
+}
+
+.btn-like, .btn-comment {
+  background-color:var(--mainColor);
+  border: none;
+  border-radius: 40px ;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-like:hover, .btn-comment:hover {
+  background-color: var(--subColor);
+}
+
 
 .footer {
   background: url(../img/Footer/footer.png);
@@ -286,3 +437,5 @@ h1 {
   color: var(--mainColor);
   font-weight: bold;
 }
+
+
